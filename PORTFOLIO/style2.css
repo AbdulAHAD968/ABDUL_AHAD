@@ -1,0 +1,264 @@
+/* From Uiverse.io by ElSombrero2 */ 
+
+/* main styling */
+.card {
+  overflow: visible;
+  width: 190px;
+  height: 254px;
+}
+  
+.content{
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+  
+.front, .back {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+  
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+  
+.back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, #782c8f, #782c8f, #245a8d, #245a8d, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+  
+.back-content{
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: rgb(238, 212, 212);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+  
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+  
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+  
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+  
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+.front-content .badge {
+  background-color: #00000055;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+}
+  
+.description {
+  box-shadow: 0px 0px 10px 5px #00000088;
+  width: 100%;
+  padding: 10px;
+  background-color: #00000099;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+  
+.title {
+  font-size: 11px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.title p {
+  width: 50%;
+}
+
+.card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 8px;
+}
+  
+.front .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+  
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ffbb66;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+  
+#bottom {
+  background-color: #ff8866;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+  
+#right {
+  background-color: #ff2233;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+  
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+.projects {
+  display: grid; /* Use grid layout for precise control */
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px; /* Spacing between cards */
+  justify-items: center; /* Center the cards */
+  padding: 20px;
+}
+  
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+  
+@media (max-width: 1024px) {
+  /* Adjust for tablet view */
+  .projects {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  .card {
+    width: 200px;
+    height: 280px;
+  }
+}
+  
+@media (max-width: 768px) {
+  /* Adjust for mobile view */
+  .projects {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+
+  .card {
+    width: 180px;
+    height: 240px;
+  }
+}
+
+
+.card {
+  position: relative;
+  overflow: visible;
+  width: 400px;
+  height: 420px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+  
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0) 70%);
+  pointer-events: none; /* Prevents interfering with hover events */
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: scale(1.5); /* Initial scale for glow effect */
+}
+
+.card::before {
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%), 
+    rgba(255, 255, 255, 0.6), 
+    rgba(0, 0, 0, 0) 70%
+  );
+}
+
+
+.card:hover::before {
+  opacity: 1;
+  transform: scale(1); /* Scales down for visible glow */
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.6);
+}
+  
+  
+  
