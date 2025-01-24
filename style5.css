@@ -1,0 +1,248 @@
+
+/* Applying background gradient */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #d39206, #7a787c);
+    color: white;
+}
+
+.containerr {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for container */
+.containerr:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Sidebar Section */
+.sidebar {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.sidebar img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.sidebar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.sidebar p {
+    margin: 5px 0 10px;
+}
+
+.sidebar a {
+    display: inline-block;
+    background: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+/* Sidebar button hover effect */
+.sidebar a:hover {
+    background: #4e4e4c;
+    box-shadow: #d39206;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-section {
+    display: flex;
+    gap: 20px;
+}
+
+
+.project-details {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details-box {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for project details */
+.details-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(238, 185, 12, 0.952);
+}
+
+.details-box h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.details-box p {
+    margin: 0;
+}
+
+/* Lower Section */
+.lower-section {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.lower-image {
+    flex: 30%;
+    position: relative;
+    width: 100%;
+    height: 120px; /* Adjust height as needed */
+    border-radius: 15px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #f5980def, rgba(8, 8, 8, 0.801));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower-image img {
+    width: 100%;
+    height: 30%;
+    border-radius: 15px;
+    display: none;
+}
+
+.lower-content {
+    flex: 70%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(173, 150, 105, 0.952);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.popping-box {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for popping box */
+.popping-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(236, 158, 12, 0.918);
+}
+
+.popping-box h3 {
+    margin: 0;
+    font-size: 18px;
+}
+  
+/* TOP RIGHT CONTAINER ME JO LOADING WALA PORTION HY. */
+
+
+.project-image {
+    flex: 60%;
+    position: relative;
+    width: 100%;
+    height: 273px; /* Adjust height as needed */
+    border-radius: 15px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #2b2927ef, rgba(8, 8, 8, 0.801));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    /* display: none; */
+}
+
+.scanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:last baseline;
+    justify-content: center;
+    color: #111110; /* Set default text color */
+    font-size: 1rem;
+}
+
+.scanner h2 {
+    font-size: 1.3rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: #272020; /* Set a visible text color */
+    z-index: 1; /* Ensure it's above the pseudo-element */
+}
+
+.scanner h2::before {
+    content: "Learning_never_exhausts_the_mind.";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid rgb(24, 23, 22); /* Updated color */
+    overflow: hidden;
+    color: rgb(12, 11, 11); /* Bright text color for visibility */
+    animation: load91371 8s linear infinite;
+    z-index: 2; /* Ensure it's above the base content */
+}
+
+@keyframes load91371 {
+    0%, 10% {
+        width: 0;
+    }
+    60%, 80% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+
+

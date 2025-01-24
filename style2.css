@@ -1,7 +1,8 @@
-/* From Uiverse.io by ElSombrero2 */ 
+
+/* PROJECTS SECTION STYLING HERE [REF = UNIVERSE.IO] */
 
 /* main styling */
-.card {
+.cardd {
   overflow: visible;
   width: 190px;
   height: 254px;
@@ -42,7 +43,7 @@
   display: block;
   width: 160px;
   height: 160%;
-  background: linear-gradient(90deg, transparent, #782c8f, #782c8f, #245a8d, #245a8d, transparent);
+  background: linear-gradient(90deg, transparent, #faa60b, #faa60b, #91969b, #94979b, transparent);
   animation: rotation_481 5000ms infinite linear;
 }
   
@@ -60,7 +61,7 @@
   gap: 30px;
 }
   
-.card:hover .content {
+.cardd:hover .content {
   transform: rotateY(180deg);
 }
   
@@ -117,7 +118,7 @@
   width: 50%;
 }
 
-.card-footer {
+.cardd-footer {
   color: #ffffff88;
   margin-top: 5px;
   font-size: 8px;
@@ -181,6 +182,7 @@
   gap: 20px; /* Spacing between cards */
   justify-items: center; /* Center the cards */
   padding: 20px;
+  text-align: left;
 }
   
 .content {
@@ -198,7 +200,7 @@
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   }
 
-  .card {
+  .cardd {
     width: 200px;
     height: 280px;
   }
@@ -210,14 +212,14 @@
     grid-template-columns: 1fr; /* 1 card per row */
   }
 
-  .card {
+  .cardd {
     width: 180px;
     height: 240px;
   }
 }
 
 
-.card {
+.cardd {
   position: relative;
   overflow: visible;
   width: 400px;
@@ -227,7 +229,7 @@
   transition: box-shadow 0.3s ease;
 }
   
-.card::before {
+.cardd::before {
   content: '';
   position: absolute;
   top: 0;
@@ -242,7 +244,7 @@
   transform: scale(1.5); /* Initial scale for glow effect */
 }
 
-.card::before {
+.cardd::before {
   background: radial-gradient(
     circle at var(--x, 50%) var(--y, 50%), 
     rgba(255, 255, 255, 0.6), 
@@ -251,12 +253,12 @@
 }
 
 
-.card:hover::before {
+.cardd:hover::before {
   opacity: 1;
-  transform: scale(1); /* Scales down for visible glow */
+  transform: scale(1.25); /* Scales down for visible glow */
 }
 
-.card:hover {
+.cardd:hover {
   box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.6);
 }
   

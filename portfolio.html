@@ -89,12 +89,11 @@
 
 
     <!-- PROJECTS 1-9 -->
-
     <section class="bg-gradient-to-r from-blue-700 to-purple-600 text-white py-20">
         <div class="projects">
             
-            <!-- Card 1 -->
-            <div class="card">
+            <!-- cardd 1 -->
+            <div class="cardd">
                 <div class="content">
                     <div class="front">
                         <div class="front-content">
@@ -120,8 +119,8 @@
             </div>
 
         
-            <!-- Card 2 -->
-            <div class="card">
+            <!-- cardd 2 -->
+            <div class="cardd">
                 <div class="content">
                     <div class="front">
                         <div class="front-content">
@@ -146,8 +145,8 @@
                 </div>
             </div>
 
-            <!-- CARD 3 -->
-            <div class="card">
+            <!-- cardd 3 -->
+            <div class="cardd">
                 <div class="content">
                     <div class="front">
                         <div class="front-content">
@@ -172,8 +171,8 @@
                 </div>
             </div>
 
-            <!-- CARD 4 -->
-            <div class="card">
+            <!-- cardd 4 -->
+            <div class="cardd">
                 <div class="content">
                     <div class="front">
                         <div class="front-content">
@@ -198,8 +197,8 @@
                 </div>
             </div>
 
-            <!-- CARD 5 -->
-            <div class="card">
+            <!-- cardd 5 -->
+            <div class="cardd">
                 <div class="content">
                     <div class="front">
                         <div class="front-content">
@@ -224,8 +223,8 @@
                 </div>
             </div>
 
-            <!-- CARD 6 -->
-            <div class="card">
+            <!-- cardd 6 -->
+            <div class="cardd">
                 <div class="content">
                     <div class="front">
                         <div class="front-content">
@@ -250,8 +249,8 @@
                 </div>
             </div>
 
-            <!-- CARD 7 -->
-            <div class="card">
+            <!-- cardd 7 -->
+            <div class="cardd">
                 <div class="content">
                     <div class="front">
                         <div class="front-content">
@@ -276,8 +275,8 @@
                 </div>
             </div>
 
-            <!-- CARD 8 -->
-            <div class="card">
+            <!-- cardd 8 -->
+            <div class="cardd">
                 <div class="content">
                     <div class="front">
                         <div class="front-content">
@@ -301,8 +300,8 @@
                 </div>
             </div>
 
-            <!-- CARD 9 -->
-            <div class="card">
+            <!-- cardd 9 -->
+            <div class="cardd">
                 <div class="content">
                     <div class="front">
                         <div class="front-content">
@@ -346,19 +345,19 @@
     </script>
 
     <script>
-        document.querySelectorAll('.card').forEach((card) => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left; // Cursor X relative to the card
-            const y = e.clientY - rect.top;  // Cursor Y relative to the card
+        document.querySelectorAll('.cardd').forEach((cardd) => {
+        cardd.addEventListener('mousemove', (e) => {
+            const rect = cardd.getBoundingClientRect();
+            const x = e.clientX - rect.left; // Cursor X relative to the cardd
+            const y = e.clientY - rect.top;  // Cursor Y relative to the cardd
     
-            card.style.setProperty('--x', `${x}px`);
-            card.style.setProperty('--y', `${y}px`);
+            cardd.style.setProperty('--x', `${x}px`);
+            cardd.style.setProperty('--y', `${y}px`);
         });
     
-        card.addEventListener('mouseleave', () => {
-            card.style.setProperty('--x', `50%`);
-            card.style.setProperty('--y', `50%`);
+        cardd.addEventListener('mouseleave', () => {
+            cardd.style.setProperty('--x', `50%`);
+            cardd.style.setProperty('--y', `50%`);
         });
         });
     </script>

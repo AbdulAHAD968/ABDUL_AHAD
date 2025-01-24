@@ -5,7 +5,7 @@ input:hover, textarea:hover {
 }
   
 button:enabled:hover {
-    background-color: #3182ce; /* Brighter blue */
+    background-color: #ffae00; /* Brighter blue */
     transition: background-color 0.3s;
 }
 
@@ -17,9 +17,9 @@ button:enabled:hover {
     margin: auto;
     padding: 12px 24px; /* Increased padding for consistent size */
     transition: all 0.2s ease;
-    border: 3px solid #552da8;
+    border: 3px solid #847e8f;
     border-radius: 50px;
-    background: #552da8;
+    background: #444346;
     cursor: pointer;
     display: inline-flex;
     align-items: center;

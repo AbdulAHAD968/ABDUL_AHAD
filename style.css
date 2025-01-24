@@ -215,7 +215,7 @@ body.dark-theme a {
     color: #a0aec0;
 }
 
-/* Add this to your main CSS file or a <style> block */
+
 @keyframes shake {
     0% {
         transform: translateX(0);
@@ -249,7 +249,7 @@ body.dark-theme a {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background: linear-gradient(to right, #3064d4, #8240bb); /* Use hex color codes or color names */
+    background: linear-gradient(to right, rgba(73, 68, 68, 0.747) ,  rgba(73, 68, 68, 0.747) ); /* Use hex color codes or color names */
     padding: 20px 20px;
     border-radius: 12px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
@@ -263,7 +263,7 @@ body.dark-theme a {
     align-items: center;
     justify-content: center;
     position: relative;
-    border-radius: 50%;
+    border-radius: 20%;
     cursor: pointer;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -272,22 +272,22 @@ body.dark-theme a {
 /* Add a colored background */
 .Btn.github:hover {
     background-color: #181818;
-    box-shadow: 0 0 15px rgba(253, 252, 252, 0.5);
+    box-shadow: 0 0 15px orange;
 }
 
 .Btn.linkdin:hover {
-    background-color: #0077b5;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    background-color: #69d8e0c9;
+    box-shadow: 0 0 15px orange;
 }
 
 .Btn.email:hover {
-    background-color: #a838d4;
-    box-shadow: 0 0 15px rgba(255, 254, 254, 0.5);
+    background-color: #d4aa38f8;
+    box-shadow: 0 0 15px orange;
 }
 
 .Btn.discord:hover {
     background-color: #193aad;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px orange;
 }
 
 /* SVG Container */
@@ -307,12 +307,11 @@ body.dark-theme a {
 }
 
 .Btn:hover .svgContainer img {
-    transform: scale(1.5); /* Slight zoom effect on hover */
+    transform: scale(1.25); /* Slight zoom effect on hover */
 }
 
 
 /* DOWNLOAD BUTTON STYLE */
-/* From Uiverse.io by adamgiebl */ 
 .cssbuttons-io-button {
     display: flex;
     align-items: center;
@@ -322,10 +321,10 @@ body.dark-theme a {
     font-size: 17px;
     padding: 0.8em 1.5em 0.8em 1.2em;
     color: white;
-    background: #b635dd;
-    background: linear-gradient(to right, #8240bb ,  #3064d4);
+    background: #f7a809;
+    background: linear-gradient(to right, rgba(252, 178, 19, 0.747) ,  rgba(235, 139, 14, 0.911));
     border: none;
-    box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+    box-shadow: 0 0.7em 1.5em -0.5em #f0bb0ebe;
     letter-spacing: 0.05em;
     border-radius: 20em;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -336,7 +335,7 @@ body.dark-theme a {
 }
 
 .cssbuttons-io-button:hover {
-    box-shadow: 0 0.5em 1.5em -0.5em #ffffffbe;
+    box-shadow: 0 0.5em 1.5em -0.5em #e4941cbe;
     transform: scale(1.25);
 }
 
