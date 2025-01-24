@@ -7,6 +7,7 @@
 
     <title>Portfolio | ABDUL_AHAD</title>
 
+    <!-- LINKS FOR EXTERNAL STYLING SHEETS. FOR BETTER READABILITY -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="style3.css">
@@ -16,7 +17,6 @@
   
     <!-- CURSOR MOVEMENT -->
     <style>
-        /* Basic Styling */
         body {
           font-family: Arial, sans-serif;
           /* margin: 0; */
@@ -51,6 +51,15 @@
             scroll-behavior: smooth;
         }
 
+    </style>
+
+    <!--   MAKING THE HEADER STICK TO THE TOP FOR EAZY NAV.  -->
+    <style>
+        header {
+            position: sticky;
+            top: 0; 
+            z-index: 1000;
+        }
     </style>
 
 </head>
@@ -140,7 +149,6 @@
                     
                     <div class="containerr">
 
-                    <!-- Sidebar Section -->
                     <div class="sidebar">
                         <img src="image.jpg" alt="Profile Picture" loading="lazy"/>
                         <h1 class="text-amber-800 font-serif font-extrabold text-3xl">Abdul Ahad</h1>
@@ -163,7 +171,6 @@
                             <div class="text-black font-serif font-extrabold text-9xl">Portfolio!</div>
                         </div>
 
-                        <!-- Project Section -->
                         <div class="project-section">
                             <div class="project-image">
                                 <img src="eagle.jpg" alt="Image of an eagle" loading="lazy">
@@ -183,7 +190,6 @@
                         </div>
                         </div>
 
-                        <!-- Lower Section -->
                         <div class="lower-section">
                         <div class="lower-image">
                             <img src="rock.png" alt="Lower Image" loading="lazy"/>
@@ -256,6 +262,8 @@
                                 <img src="fiverr.png" alt="Fiver" width="50" height="50" loading="lazy" />
                             </div>
                         </a>
+
+                        <!-- TRY HACKME KA B DALNA HY  -->
                     </div>
 
                     </div>
@@ -265,8 +273,6 @@
             
             <!-- ABOUT SECTION. -->
             <section id="about">
-
-                <!-- Hero Section -->
 
                 <br><br><br>
                 <div class="text-grey-700 font-serif font-extrabold text-9xl"">
@@ -1032,15 +1038,14 @@
 
         </section>
 
-        <!-- Footer -->
+        <!-- FOOTER -->
         <footer class="bg-gray-800 text-gray-400 py-6">
             <div class="container mx-auto text-center">
                 <p>&copy; 2025 Abdul Ahad. All Rights Reserved.</p>
             </div>
         </footer>
 
-
-        <!-- JavaScript -->
+        <!-- GET THE CLICK RESPONSE. -->
         <script>
             const themeToggle = document.getElementById('theme-toggle');
             themeToggle.addEventListener('change', () => {
